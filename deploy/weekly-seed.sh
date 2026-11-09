@@ -19,7 +19,7 @@ export CLOUD_ML_REGION="${CLOUD_ML_REGION:-global}"
 export DOCKER_CONFIG="${DOCKER_CONFIG:-$HOME/.docker}"
 
 VL_ENGINE_URL="${VL_ENGINE_URL:-https://github.com/Vigil-SOC/verification-layers}"
-VL_ENGINE_REF="${VL_ENGINE_REF:-2e5a2dcce41cda465c73abae3193151e1b37da18}"   # tag or commit of the engine repo
+VL_ENGINE_REF="${VL_ENGINE_REF:-bf8d53a7c35107d1a6eeff4cc38bb7503ba7d212}"   # tag or commit of the engine repo
 VL_HOME="${VL_HOME:-$HOME/verification-layers}"    # engine checkout; outputs/ lives under it
 VL_WORKERS="${VL_WORKERS:-2}"                      # parallel problems per arm
 VL_LOG_DIR="${VL_LOG_DIR:-$VL_HOME/outputs/deploy-logs}"
