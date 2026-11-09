@@ -1,0 +1,11 @@
+[Unit]
+Description=Run the verification-layers seed once a week
+
+[Timer]
+# Monday 06:00 UTC; the results table is ready the same day.
+OnCalendar=Mon *-*-* 06:00:00 UTC
+Persistent=true
+RandomizedDelaySec=15m
+
+[Install]
+WantedBy=timers.target

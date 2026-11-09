@@ -1,0 +1,3 @@
+# Alternative to the systemd timer: one line in the running user's crontab.
+# Monday 06:00 UTC. The environment file holds the variables in .env.example.
+0 6 * * 1  set -a; . /etc/verification-layers/env; set +a; $HOME/verification-layers-deploy/deploy/weekly-seed.sh >> $HOME/vl-seed-cron.log 2>&1

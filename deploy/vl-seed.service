@@ -1,0 +1,19 @@
+# systemd unit for one weekly seed. Install with vl-seed.timer:
+#   sudo cp deploy/vl-seed.{service,timer} /etc/systemd/system/
+#   sudo systemctl daemon-reload && sudo systemctl enable --now vl-seed.timer
+# Environment comes from /etc/verification-layers/env (mode 600, root-owned);
+# copy .env.example there and fill it in. Replace <user> with the account that
+# has docker access and the Claude Code CLI on its PATH.
+[Unit]
+Description=verification-layers weekly seed
+After=network-online.target docker.service
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=<user>
+EnvironmentFile=/etc/verification-layers/env
+WorkingDirectory=/home/<user>
+ExecStart=/home/<user>/verification-layers-deploy/deploy/weekly-seed.sh
+# A seed takes several hours (seed 1: about five and a half).
+TimeoutStartSec=12h
