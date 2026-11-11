@@ -1,7 +1,7 @@
 # Seed 1
 
 Run 2026-11-06, 14:48 UTC to about 20:00, on engine commit
-[`2e5a2dc`](https://github.com/Vigil-SOC/verification-layers/commit/2e5a2dcce41cda465c73abae3193151e1b37da18).
+`2e5a2dc`.
 
 - 20 of 36 SlopCodeBench problems (`random.Random(42)`), 101 checkpoints per arm.
 - Claude Sonnet 5.5 at medium effort in Claude Code 2.1.318, on Vertex AI, for every role.

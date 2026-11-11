@@ -59,7 +59,7 @@ shadow reviewer on As and Cs. The cross-family judge covers A to D only.
 
 Model `sonnet-5.5` (`claude-sonnet-5-5`) on Vertex `global`, medium effort, for implementer,
 reviewer and shadow reviewer. Claude Code 2.1.318 (`configs/agents/claude_code_vl.yaml`,
-`bypassPermissions`, 100-step limit). Runner: `Vigil-SOC/slop-code-bench@5fc0032`. Problem
+`bypassPermissions`, 100-step limit). Runner: `slop-code-bench@5fc0032`. Problem
 catalog v1.0 at `4d38d300`. Image `ghcr.io/astral-sh/uv:python3.12-trixie-slim`. Reviewer: in
 loop, at most 2 rounds. Two workers per arm. Cross-family judge: Gemini 3.8 Flash, final
 checkpoint of each problem. Engine: the commit that adds this file. Dollars are re-priced from

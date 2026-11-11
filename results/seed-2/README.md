@@ -1,6 +1,6 @@
 # Seed 2 results (stamp `20261110T1535`)
 
-Run on `factory-host-1` from 2026-11-10 15:35Z to 2026-11-11 00:10Z. Sonnet 5.5, medium effort, on Vertex `global`, with Claude Code 2.1.318 and the engine pinned at [`5fc0032`](https://github.com/Vigil-SOC/verification-layers/commit/5fc0032). Six arms on the same 20 problems, 101 checkpoints each. Re-priced spend was $232.31, plus about $4.70 for five errored runs whose traces were lost (Deviation 3), so about $237 in total against the $300 cap. The method is in [`preregistration.md`](preregistration.md). Read its Deviations section before using these numbers.
+Run on `factory-host-1` from 2026-11-10 15:35Z to 2026-11-11 00:10Z. Sonnet 5.5, medium effort, on Vertex `global`, with Claude Code 2.1.318 and the engine pinned at `5fc0032`. Six arms on the same 20 problems, 101 checkpoints each. Re-priced spend was $232.31, plus about $4.70 for five errored runs whose traces were lost (Deviation 3), so about $237 in total against the $300 cap. The method is in [`preregistration.md`](preregistration.md). Read its Deviations section before using these numbers.
 
 ## Preregistered tests (pooled seeds 1 and 2; 95% bootstrap over problems)
 
