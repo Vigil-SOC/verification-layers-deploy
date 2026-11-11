@@ -27,6 +27,7 @@ VL_LOG_DIR="${VL_LOG_DIR:-$VL_HOME/outputs/deploy-logs}"
 if [[ ! -d "$VL_HOME/.git" ]]; then
   git clone --quiet "$VL_ENGINE_URL" "$VL_HOME"
 fi
+git -C "$VL_HOME" remote set-url origin "$VL_ENGINE_URL"   # follow VL_ENGINE_URL if an older checkout points elsewhere
 git -C "$VL_HOME" fetch --quiet --tags origin
 git -C "$VL_HOME" checkout --quiet --detach "$VL_ENGINE_REF"
 
